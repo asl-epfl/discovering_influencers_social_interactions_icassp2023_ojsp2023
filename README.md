@@ -18,3 +18,5 @@ python main.py --likelihood_regime 0 --times 70000 --adjacency_regime 3 --agents
 ```
 
 To understand arguments for the parser we refer to ```parser.py``` or run python ```main.py --help```.
+
+##### Find experiments on <span style="color:blue">Twitter</span> data in the following repo [asl-epfl/discovering_influencers_twitter_ojsp2023](https://github.com/asl-epfl/discovering_influencers_twitter_ojsp2023).
