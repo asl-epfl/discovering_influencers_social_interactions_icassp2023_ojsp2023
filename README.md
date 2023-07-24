@@ -11,7 +11,7 @@ V. Shumovskaia, M. Kayaalp, and A. H. Sayed, “[Identifying opinion influencers
 python plot_draft.py
 ```
 
-#### To fully run experiments, we refer to runs_final.txt, e.g.:
+#### To fully run experiments, we refer to ```runs_final.txt```, e.g.:
 
 ```
 python main.py --likelihood_regime 0 --times 70000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50
