@@ -6,7 +6,7 @@ V. Shumovskaia, M. Kayaalp, M. Cemri, and A. H. Sayed, “[Discovering influence
 
 V. Shumovskaia, M. Kayaalp, and A. H. Sayed, “[Identifying opinion influencers over social networks](https://ieeexplore.ieee.org/document/10094722),” IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) , pp. 1–5, 2023.
 
-#### To get the figures in the paper, run these scripts:
+#### To get the figures from the paper, run these scripts:
 ```
 python plot_draft.py
 ```
