@@ -4,6 +4,11 @@ python main.py --likelihood_regime 0 --times 70000 --adjacency_regime 3 --agents
 python main.py --likelihood_regime 0 --times 70000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 10
 python main.py --likelihood_regime 0 --times 70000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 1
 # influences
+    python main.py --likelihood_regime 0 --times 100000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 3
+    python main.py --likelihood_regime 0 --times 100000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 1
+    python main.py --likelihood_regime 0 --times 300000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 0
+    python main.py --likelihood_regime 0 --times 300000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.01 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 0
+    # diff level of influence
     python main.py --likelihood_regime 0 --times 100000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 1 --sigma_inf 0.2
     python main.py --likelihood_regime 0 --times 100000 --adjacency_regime 3 --agents 20 --er_prob 0.2 --seed 21 --lr 0.1 --step_size 0.05 --likelihood_regime 3 --multistate --states 5 --comparison --window 50 --num_inf 3 --sigma_inf 0.2
 
