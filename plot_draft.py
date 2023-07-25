@@ -38,8 +38,8 @@ plt.legend()
 plt.xlabel('Time')
 plt.ylabel('$\|\|\widetilde{A}_i\|\|_{F}^2$')
 plt.grid()
-plt.show()
-#plt.savefig('draft/graph_21_error.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21_error.png', dpi=300, bbox_inches='tight')
 
 
 # plot 1 adapt
@@ -58,8 +58,8 @@ plt.legend()
 plt.xlabel('Time')
 plt.ylabel('$\|\|\widetilde{A}_i\|\|_{F}$')
 plt.grid()
-plt.show()
-#plt.savefig('draft/graph_21_error_perturbe.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21_error_perturbe.png', dpi=300, bbox_inches='tight')
 
 # plot 2
 
@@ -87,13 +87,13 @@ plt.ylabel('$\|\|\widetilde{L}_i\|\|_{F}^2$')
 plt.grid()
 plt.xlim(0, t2)
 plt.yscale('log')
-plt.show()
-#plt.savefig('draft/L_21_error_.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/L_21_error_.png', dpi=300, bbox_inches='tight')
 
 # plot 3
 
-matrix_true = np.load('draft/matrix_19.npy')
-matrix_learned = np.load('draft/matrix_19_w50.npy')
+matrix_true = np.load('draft/matrix_21_true.npy')
+matrix_learned = np.load('draft/matrix_21_w50.npy')
 matrix_learned[matrix_learned < 0.] = 0.
 
 cmap = sns.color_palette("mako", as_cmap=True)
@@ -103,14 +103,14 @@ vmax = max(matrix_learned.max(), matrix_true.max())
 plt.figure()
 sns.heatmap(matrix_true, yticklabels=False, xticklabels=False, cbar=True,
             vmin=vmin, cmap=cmap)
-plt.show()
-#plt.savefig('draft/adj_19_true.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/adj_21_true.png', dpi=300, bbox_inches='tight')
 
 plt.figure()
 sns.heatmap(matrix_learned, yticklabels=False, xticklabels=False, cbar=True,
             vmin=vmin, cmap=cmap)
-plt.show()
-#plt.savefig('draft/adj_19_w50.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/adj_21_w50.png', dpi=300, bbox_inches='tight')
 
 # plot 4
 
@@ -133,8 +133,8 @@ plt.grid()
 plt.xlabel('agent')
 plt.ylabel('influence')
 plt.legend()
-plt.show()
-# plt.savefig('draft/influences_21_w50_big_1inf.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/influences_21_w50_big_1inf.png', dpi=300, bbox_inches='tight')
 
 font = {'size': 9}
 matplotlib.rc('font', **font)
@@ -158,8 +158,8 @@ plt.grid()
 plt.xlabel('Agent')
 plt.ylabel('Influence')
 plt.legend()
-plt.show()
-# plt.savefig('draft/influences_21_w50_1inf.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/influences_21_w50_1inf.png', dpi=300, bbox_inches='tight')
 
 font = {'size': 17}
 matplotlib.rc('font', **font)
@@ -188,14 +188,14 @@ weights_learned = [G_learned[u][v]['weight']*5 for u, v in edges_learned]
 plt.figure(figsize=(8, 7))
 nx.draw_networkx_nodes(G, pos=pos, node_color=colors[4], node_size=350)
 nx.draw_networkx_edges(G, pos=pos, edge_color='black', width=weights)
-plt.show()
-#plt.savefig('draft/graph_21.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21.png', dpi=300, bbox_inches='tight')
 
 plt.figure(figsize=(8, 7))
 nx.draw_networkx_nodes(G_learned, pos=pos, node_color=colors[4], node_size=350)
 nx.draw_networkx_edges(G_learned, pos=pos, edge_color='black', width=weights_learned)
-plt.show()
-#plt.savefig('draft/graph_21_w50.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21_w50.png', dpi=300, bbox_inches='tight')
 
 # plot 6
 
@@ -229,8 +229,8 @@ matplotlib.rc('font', **font)
 plt.xlabel('Time')
 plt.ylabel('$r_i$')
 plt.grid()
-plt.show()
-# plt.savefig('draft/state_estimation2.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/state_estimation2.png', dpi=300, bbox_inches='tight')
 
 # plot 7
 
@@ -258,8 +258,8 @@ plt.legend()
 plt.xlabel('Time')
 plt.ylabel('$\|\|\widetilde{A}_i\|\|_{F}$')
 plt.grid()
-plt.show()
-# plt.savefig('draft/graph_21_error_perturbe_001.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21_error_perturbe_001.png', dpi=300, bbox_inches='tight')
 
 
 # plot 8
@@ -294,5 +294,5 @@ axins.vlines(time_p, ymin=0 - eps/2, ymax=np.array(error_w50_p).max() + eps,
 
 font = {'size': 17}
 matplotlib.rc('font', **font)
-plt.show()
-# plt.savefig('draft/graph_21_error_perturbe_state.png', dpi=300, bbox_inches='tight')
+# plt.show()
+plt.savefig('draft/graph_21_error_perturbe_state.png', dpi=300, bbox_inches='tight')
