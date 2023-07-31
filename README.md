@@ -2,9 +2,13 @@
 
 #### The data and the code for the experiments in the papers: 
 
-V. Shumovskaia, M. Kayaalp, M. Cemri, and A. H. Sayed, “[Discovering influencers in opinion formation over social graphs](https://ieeexplore.ieee.org/document/10079214),” IEEE Open Journal of Signal Processing, pp. 1–20, 2023.
+V. Shumovskaia, M. Kayaalp, M. Cemri, and A. H. Sayed, “[Discovering influencers in opinion formation over social graphs](https://ieeexplore.ieee.org/document/10079214),” IEEE Open Journal of Signal Processing, pp. 1–20, 2023.[![DOI](https://zenodo.org/badge/670103909.svg)](https://zenodo.org/badge/latestdoi/670103909)
 
-V. Shumovskaia, M. Kayaalp, and A. H. Sayed, “[Identifying opinion influencers over social networks](https://ieeexplore.ieee.org/document/10094722),” IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) , pp. 1–5, 2023.
+
+
+V. Shumovskaia, M. Kayaalp, and A. H. Sayed, “[Identifying opinion influencers over social networks](https://ieeexplore.ieee.org/document/10094722),” IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) , pp. 1–5, 2023.[![DOI](https://zenodo.org/badge/670103909.svg)](https://zenodo.org/badge/latestdoi/670103909)
+
+
 
 #### To get the figures from the paper, run these scripts:
 ```
