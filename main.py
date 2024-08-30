@@ -124,7 +124,6 @@ if args.comparison:
 '''
 graph learning
 '''
-np.random.seed(5)
 logs_prev = [log_prev]
 for step in iterator:
     ##############################################################
